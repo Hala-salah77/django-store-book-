@@ -1,0 +1,89 @@
+body{
+    background-color: #05102e;
+}
+/* Start whit fixed nav */
+
+.white-nav {
+    background-color: #fff;
+}
+
+
+
+.white-nav.navbar .navbar-nav .nav-link::after, .white-nav .navbar-toggler {
+background-color: #05102e;
+}
+
+  /* End white fixed nav */
+.navbar-brand img{
+    width: 68px !important;
+}
+.card .img-box{
+    overflow: hidden;
+}
+.img-box img{
+    width: 100% !important;
+    height: 300px !important;
+    transition: all ease-in-out .4s;
+}
+.img-box img:hover{
+    transform: scale(1.1,1.1);
+}
+a,a:hover{
+    text-decoration: none;
+}
+
+/* start footer */
+footer .navbar-brand img {
+    width: 150px !important;
+    margin-top: 30px;
+}
+footer .Social-media{
+    display: flex;
+    justify-content: center;
+}
+footer a{
+    display: flex;
+    background: #ffc107;
+    height: 45px;
+    width: 45px;
+    margin: 0 15px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0);
+    transition: transform 0.5s
+}
+footer a i{
+    font-size: 20px;
+    color:#05102e;
+    transition: transform 0.5s;
+}
+footer a:hover{
+    box-shadow:inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(5, 16, 46, .6),
+                        -0.5px -0.5px 0px -1px rgba(255,255,255,1),
+                        0.5px 0.5px 0px rgba(0,0,0,0.15),
+                        0px 12px 10px -10px rgba(0,0,0,0.05);
+    border: 1px solid rgba(255, 0, 0, 0.1);
+    transform: translateY(2px);
+}
+footer a:hover i{
+    transform: scale(0.90);
+}
+footer a:hover .fa-facebook{
+    color: #3b5998;
+}
+footer a:hover .fa-twitter{
+    color: #00acee;
+}
+footer a:hover .fa-whatsapp{
+    color: #4fce5d;
+}
+footer a:hover .fa-instagram{
+    color: #f14843;
+}
+footer a:hover .fa-youtube{
+    color: #f00;
+}
+/* End Footer */

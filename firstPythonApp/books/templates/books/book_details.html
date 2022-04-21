@@ -1,0 +1,21 @@
+{% extends 'books/layout.html' %}
+{% load static %}
+{% block content %}
+
+    <div class="container my-3">
+        <div class="row justify-content-center align-items-center">
+            <div class="box col-md-8 p-2">
+                <h3 class="text-warning mb-2">{{book.title}}</h3>
+                <p class="name text-dark text-white mb-4">{{book.description}}</p>
+                <p class="name text-dark text-white mb-4">{{book.overview}}</p>
+                <p class="name text-dark text-white mb-4">{{book.book_set}}</p>
+                <a  class="w-100 " href="/author/{{book.author_id.id}}"><span class="text-warning mr-2 fst-italic text-decoration-underline"> Author : {{book.author_id.name}}</span></a><br/><small class="text-warning">{{book.created_at}}</small>
+                    <div class="card p-2 w-100 mt-2">
+                        <img src="{{book.upload_image.url}}" class="img-thumbnail">
+                    </div>
+
+            </div>
+        </div>
+    </div>
+        
+{% endblock %}

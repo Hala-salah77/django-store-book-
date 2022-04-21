@@ -1,0 +1,26 @@
+{% extends 'books/layout.html' %}
+{% load static %}
+{% block content %}
+
+    <div class="container my-3">
+        <div class="row justify-content-center align-items-center">
+            <h2 class="text-center text-warning my-5">Author Info</h2>
+            <div class="box px-4 card col-md-4 p-2" style="border: 5px solid #ffc107;">
+                <p class=" mb-4">Name : {{author.name}}</p>
+                <p class="name text-dark  mb-4">Email : {{author.email}}</p>
+                <p class="name text-dark  mb-4">Age : {{author.age}}</p>
+                <h6 class="">Author Books</h6>
+                <ul>
+                {% for book in book_author %}
+                    <a class="w-100" href="/book/{{book.id}}">
+                        <li class="text-warning text-decoration-underline">{{book.title}}</li>
+                    </a>
+                {% empty %} 
+                </ul>
+                <p class="text-center ">No Book Found yet</p>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+        
+{% endblock %}

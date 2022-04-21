@@ -27,8 +27,8 @@ def show_book(request,id):
 
 def show_book_author(request,id):
     author=get_object_or_404(Author,id=id)
-    book_author=Book.objects.filter(author_id=id).values
-    
+    book_author=Book.objects.filter(author_id=id)
+    print(book_author)
     context={
         "book_author":book_author,
         "author":author
